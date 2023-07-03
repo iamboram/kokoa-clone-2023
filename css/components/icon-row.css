@@ -1,0 +1,23 @@
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+.icon-row__icon {
+    display: flex; /*아이콘+이름이 떨어져있다가-> 적용 후 붙었음 */ 
+    
+    /*양 옆으로 있던 아이콘+이름이 --> 적용 후 2줄로 변함! 
+    그 이유는 main axis가 세로(column)가 되었기 때문임 !*/ 
+    flex-direction: column; 
+
+    /* 좌측정렬로 되어있던 것들을 세로 가운데 정렬로 만들어줌!*/ 
+    align-items: center;
+}
+
+.icon-row__icon i {
+    font-size: 35px;   
+}
+
+.icon-row__icon span {
+    margin-top: 18px;
+}
